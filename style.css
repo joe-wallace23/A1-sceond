@@ -1,0 +1,1480 @@
+/* Go to google font to get this import*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500&display=swap');
+body{
+    font-family: "Roboto",sans-serif;
+    position: relative;
+    top: -25px;
+}
+/* An asterisk can also be followed by a selector. 
+This is useful when you want to set a style for of all 
+the elements of an HTML page or for all of the elements 
+within an element of an HTML page.*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: gray;
+    transition: all .5s ease;
+    z-index: 1;
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: blue;
+    user-select: none;
+}
+.sidebar ul a{
+    display:block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+
+}
+.sidebar ul li:hover a {
+    padding-left: 50px;
+
+}
+.sidebar ul a i {
+ margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+ position: absolute;
+ cursor: pointer;
+ background: black;
+ border-radius: 3px;
+ 
+}
+label #btn{
+    left: 40px;
+    top: 50px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+    z-index: 1;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: blanchedalmond;
+    padding: 4px 9px;
+   transition: all .5s ease;
+
+}
+
+
+
+
+
+/* (~) As the name suggests it is made of the 
+“tilde” (U+007E, ~) character that separates two 
+sequences of simple selectors. The elements represented 
+by the two sequences share the same parent in the document tree. */
+#check:checked ~ .sidebar{
+    left: 0;
+}
+/* (~) As the name suggests it is made of the 
+“tilde” (U+007E, ~) character that separates two 
+sequences of simple selectors. The elements represented 
+by the two sequences share the same parent in the document tree. */
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+ section.home-1{
+    background: url(/images/bun.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
+/* home section */
+.home-1
+{
+    padding-top: 300px;
+}
+.home-1 h1
+{
+   color: white;
+   font-size: 50px;
+   padding: 10px 0px;
+   border-bottom: 5px solid red;
+   font-family: 'Roboto', sans-serif;
+
+}
+.home-1 .para p
+{
+   color: white;
+   font-size: 20px;
+   padding-top: 10px;
+   font-family: 'Lato', sans-serif;
+}
+.ttbtn
+{
+    padding: 10px 0px;
+}
+.ttbtn .btn
+{ 
+    margin: 0px 10px;
+    border-radius: 20px;
+}
+ .btn
+{ 
+  width: 200px;
+}
+.ttbtn .btn.t
+{ 
+   border: 2px solid red;
+  background: transparent;
+}
+.ttbtn .btn.n
+{ 
+  background: red;
+}
+.ttbtn .btn.t:hover
+{ 
+   background: red;
+   transition: .6s ease-in-out;
+}
+.house-2 .title h3
+{
+    color: black;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "Roboto",sans-serif;
+
+}
+.house-2 .title a
+{
+    color: red;
+    text-decoration: none;
+    font-size: 16px;
+    padding-left: 10px;
+
+}
+.house-2 .title i
+{
+    color: red
+   
+
+}
+.house-2 .title a:hover
+{
+    color: #4682B4;
+   
+
+}
+
+.card .images img
+{
+max-width: 100%;
+height: auto;
+cursor: pointer;
+}
+.card .title h4
+{
+padding-top: 10px;
+padding-left: 10px ;
+text-transform: uppercase;
+color: black;
+font-family: 'Lato', sans-serif;
+}
+ .pr p
+{
+    color: black;
+    font-size: 16px;
+    padding: 0px 10px;
+}
+.btn-warning {
+  
+    background-color: red !important;
+    color: white !important;
+    border: none !important;
+    margin: 10px;
+    border-radius: 20px !important;
+
+}
+.btn-warning:hover {
+  
+box-shadow: 3px 3px 5px 6px #ccc;
+}
+.cuz-3 h3
+{
+    color: black;
+}
+.cuz-3 .pic
+{
+    background: url(/images/maxresdefault\ \(4\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    cursor: pointer;
+}
+.cuz-3 .pic h2
+{
+   color: black;
+   font-size: 21px;
+   padding: 10px;
+}
+.cuz-3 .pic i
+{
+   color: red;
+   font-size: 12px;
+  
+}
+.cuz-3 .picn
+{
+    background: url(/images/chicken-lttile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    cursor: pointer;
+}
+.cuz-3 .picn h2
+{
+   color: black;
+   font-size: 21px;
+   padding: 10px;
+}
+
+.cuz-3 .picn i
+{
+   color: red;
+   font-size: 12px;
+  
+}
+
+.cuz-3 .picy
+{
+    background: url(/images/MV5BYTdmNjlhZWMtZGQxZC00OTAxLWEzMjMtZGU3YWJjNWEzM2E0XkEyXkFqcGdeQXVyNDU4MDA0NTM@._V1_.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    cursor: pointer;
+}
+.cuz-3 .picy h2
+{
+   color: black;
+   font-size: 21px;
+   padding: 10px;
+}
+.cuz-3 .picy i
+{
+   color: red;
+   font-size: 12px;
+  
+}
+.cuz-3 .picz
+{
+    background: url(/images/mickey-donald-goofy-the-three-musketeers.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    cursor: pointer;
+}
+.cuz-3 .picz h2
+{
+   color: black;
+   font-size: 21px;
+   padding: 10px;
+}
+.cuz-3 .picz i
+{
+   color: red;
+   font-size: 12px;
+  
+}
+.cuz-3 .picx
+{
+    background: url(/images/34922-de_de.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    cursor: pointer;
+}
+.cuz-3 .picx h2
+{
+   color: black;
+   font-size: 21px;
+   padding: 10px;
+}
+.cuz-3 .picx i
+{
+   color: red;
+   font-size: 12px;
+  
+}
+.cuz-3 .picw
+{
+    background: url(/images/maxresdefault\ \(4\)\ copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    cursor: pointer;
+  
+}
+.cuz-3 .picw h2
+{
+   color: black;
+   font-size: 21px;
+   padding: 10px;
+}
+.cuz-3 .picw i
+{
+   color: red;
+   font-size: 12px;
+  
+}
+.cuz-3 a:hover
+{
+    text-decoration: none;
+}
+
+
+.cuz-3 .col-sm-4 
+{
+    margin-bottom: 25px;
+}
+.cuz-3 h3
+{
+   padding-bottom: 10px;
+}
+.picd img
+{
+ width: 100%;
+ height: 300px !important;
+}
+.megam .col-sm-12
+{
+    margin-bottom: 20px;
+}
+.megam .col-sm-12:nth-child(2)
+{
+   border-bottom: 5px solid red;
+  padding-bottom: 10px;
+}
+/* end home section */
+/* start full footer section */
+.full-screen
+{
+    display: block;
+}
+.full-screen
+{
+    margin-top: 200px;
+}
+.full-screen .footer-logo img
+{
+    width: 100%;
+}
+.full-screen h6
+{
+    color: black;
+    font-size: 14px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.full-screen .menu-list li
+{
+    padding: 3px 0px;
+}
+.full-screen .menu-list li a
+{
+    color: black;
+    font-size: 12px;
+}
+.full-screen .menu-list li a:hover
+{
+    color: red;
+   text-decoration: none;
+}
+
+/* End full footer section */
+
+/* Start media footer */
+.accordian
+{
+    max-width: 1000px;
+    display: block;
+    margin: 100px auto;
+}
+.media-footez
+{
+    display:none;
+}
+.accordian .card
+{
+    box-shadow: 0px 0px 20px black;
+    margin-bottom:  20px;
+    float: left;
+    width: 100%;
+}
+.accordian .card .card-header h6
+{
+    cursor: pointer;
+    color: black;
+    position: relative;
+ background-color: transparent;
+ margin: 0;
+ padding: 15px 20px;
+}
+.accordian .card .card-header h6 span
+{
+    position: relative;
+    font-size: 13px;
+}
+.accordian .card .card-header h6 span
+{
+    float: right;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+
+}
+/*
+.accordian.card:nth-child(1).card-body
+{
+    display: block;
+}*/
+.card .menu-list li
+{
+    padding: 5px;
+}
+.card .menu-list li a
+{
+    color: black;
+    font-size: 13px;
+}
+.card .menu-list li a:hover
+{
+    color: red;
+    text-decoration: none;
+}
+/* End media footer */
+
+/* Start 1st brand icon */
+.social-icon li
+{
+ display: inline-block;
+ margin: 0px 5px;
+ padding: 5px 10px;
+ border: 1px solid red;
+ background-color: red;
+ border-radius: 50%;
+}
+.social-icon li:hover
+{
+ background: black !important;
+ border: 1px solid black;
+
+}
+.social-icon i
+{
+  font-size: 30px;
+  color: white;
+}
+/* End 1st brand icon */
+/* bottom menu list */
+.bottom-menu li
+{
+    display: inline-block;
+    padding: 5px 3px;
+   
+}
+.bottom-menu li a
+{
+    color: black;
+    font-size: 12px;
+   
+}
+.bottom-menu li a:hover
+{
+   text-decoration: none;
+   color: red;
+   
+}
+.bottom-menu li a::after
+{
+   content: '|';
+   color: black;
+   padding-left: 10px;
+   
+}
+.mem .content li
+{
+    display: inline-block;
+     position: relative;
+     right: -300px;
+}
+.mem .content li.g
+{
+   background-color: red;
+   border-radius: 50%;
+   padding: 5px 10px;
+   
+}
+.mem .content li.g:hover
+{
+  background-color: black;
+   
+}
+
+.mem .content a
+{
+  font-size: 26px;
+  color: white;
+   
+}
+.mem .content strong
+{
+    color: black;
+    font-size: 15px;
+}
+.brands::after
+
+{
+  content: '';
+  display: block;
+  height: 2px;
+  background: lightgrey;
+  margin: 0px 160px;
+  margin-bottom: 10px;
+}
+.small-text::before
+{
+   content: '';
+   display: block;
+   background: lightgrey;
+   height: 2px;
+  
+   margin: 0px 160px;
+}
+.small-text .content
+
+{
+    padding-top: 20px;
+}
+.small-text .content p
+
+{
+    color: black;
+    font-size: 12px;
+}
+.content p.man
+
+{
+    padding: 10px 0px !important;
+    text-transform: capitalize;
+}
+.content p.copyright
+
+{
+    
+    text-transform: capitalize;
+}
+
+/* End menu list */
+
+/* Deals section */
+.gang
+{
+    background: url(/Deals-images/beauty-and-the-beast-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    transition: all .5s;
+}
+.gang .col-sm-6 
+{
+    margin-bottom: 20px;
+}
+
+.gang h1
+{
+    color: black;
+    font-size: 40px;
+    padding: 50px 0px;
+    text-transform: capitalize;
+}
+
+.gang button
+{
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    padding: 29px 15px;
+}
+.gang   .button-group
+{
+   box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+   border-radius: 30px;
+}
+.card-title img
+{
+   max-width: 135px;
+   max-height: 135px;
+   float: right;
+   border-radius: 4px;
+}
+.card-title h4
+{
+    color: black;
+    font-size: 21;
+}
+
+.card-title p.card-text
+{
+    color: black;
+    font-size: 14px;
+}
+#portolio-section a
+{
+    font-size: 14px;
+}
+#portolio-section a:hover
+{
+    text-decoration: none;
+}
+.card-title .btn-primary
+{
+   margin-top: 30px; 
+   width: 250px;
+   background-color: red;
+   border: 1px solid red;
+   color: white;
+   border-radius: 4px;
+}
+.card-title .btn-primary:hover
+{
+  background-color: red;
+  border: 1px solid red;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+/* example filter 
+.grid-item
+{
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+.flower{
+ background: red;
+
+}
+.bird
+
+{
+background: saddlebrown;
+}
+.fruit
+{
+background: sandybrown;
+}
+/* end example filter*/
+
+/* End Deals section */
+
+/* home section Goofy Movie section */
+.goofy .wapper .pic-o
+{
+    background: url(/images/money.jpg);
+    height: 500px;
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.pic-o i
+{
+  
+    position: relative;
+    top: 200px;
+    left: 500px;
+    font-size: 40px;
+    color: red;
+}
+.pic-o .fa
+{
+  
+   border: 2px solid red;
+   padding: 20px 20px;
+   border-radius: 50%;
+   background: black;
+}
+.title h2
+{
+    color: black;
+    padding: 10px 0px;
+}
+.sub h6
+{
+    color: black;
+    font-weight: 700;
+}
+.para-2 p
+
+{
+    padding: 0px 30px;
+}
+.tomates img
+{
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+.tomates span
+{
+    float: right;
+    position: relative;
+    top: 30px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+.tomates span:hover
+{
+  color: #4682B4;
+}
+.tomates strong, .tomates p
+{
+    float: right;
+    position: relative;
+top: 95px;
+left: 160px;
+color: black;
+
+}
+.popcorn img
+{
+    width: 100px;
+    height: 100px;
+}
+.popcorn span
+{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;  
+    position: relative;
+top: 15px;
+}
+.popcorn p
+{
+   
+   color: black;
+}
+.popcorn span:hover
+{
+   
+    color: #4682B4;
+}
+
+.popcorn a:hover
+{
+   
+    text-decoration: none;
+}
+.wall-E
+{
+    background: url(/images/Wall-E.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.wall-E .wapper .pic-o
+ {
+     background: url(/images/Wall-E.jpg);
+     height: 500px;
+   background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+ }
+
+.piglit
+{
+    background: url(/images/maxresdefault\ \(4\)\ copy.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.piglit .wapper .pic-o
+ {
+     background: url(/images/maxresdefault\ \(4\)\ copy.jpg);
+     height: 500px;
+   background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+ }
+
+.tigger
+{
+    background: url(/images/34922-de_de.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.tigger .wapper .pic-o
+ {
+     background: url(/images/34922-de_de.jpg);
+     height: 500px;
+   background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+ }
+.mickey
+{
+    background: url(/images/mickey-donald-goofy-the-three-musketeers.jpeg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.mickey .wapper .pic-o
+ {
+     background: url(/images/mickey-donald-goofy-the-three-musketeers.jpeg);
+     height: 500px;
+   background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+ }
+
+.extremely
+{
+    background: url(/images/MV5BYTdmNjlhZWMtZGQxZC00OTAxLWEzMjMtZGU3YWJjNWEzM2E0XkEyXkFqcGdeQXVyNDU4MDA0NTM@._V1_.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .extremely .wapper .pic-o
+ {
+     background: url(/images/MV5BYTdmNjlhZWMtZGQxZC00OTAxLWEzMjMtZGU3YWJjNWEzM2E0XkEyXkFqcGdeQXVyNDU4MDA0NTM@._V1_.jpg);
+     height: 500px;
+   background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+ }
+.chicken
+{
+   background: url(/images/chicken-lttile.jpg); 
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+ .chicken .wapper .pic-o
+{
+    background: url(/images/chicken-lttile.jpg);
+    height: 500px;
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.goofy
+{
+   background: url(/images/money.jpg); 
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.wapper
+{
+    background: white;
+  
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 40px 2px rgba(37, 73, 214, 0.18);
+}
+
+
+/* End home section Goofy Movie section */
+
+/* about Us section */
+
+.about-section
+{
+    background: url(/about-us-image/StudioLot_TeamDisney_7-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.about-section .title h1
+{
+ text-align: center;
+ color: white;
+ padding-top: 300px;
+ text-transform: uppercase;
+ letter-spacing: .05em;
+ text-shadow: 3px 3px 10 #000;
+ font-size: 60px;
+}
+
+.a-first .head h2
+{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    padding-top: 70px;
+    font-size: 1.75rem;
+}
+
+.a-first .head h2::after
+{
+    content: '';
+    height: 3px;
+    display: block;
+    background-color: lightblue;
+    left: 0;
+     margin: 0 auto;
+    position: absolute;
+     right: 0;
+    width: 100px;
+    margin-top: 20px;
+}
+.color
+{
+    background: #fcf8ee;
+}
+.a-first .card
+{
+   background: white; 
+   border-radius: 10px;
+   border: none;
+}
+.a-first .content p
+{
+   text-align: center;
+   padding: 20px 0px;
+   color: gray;
+   text-transform: uppercase;
+   font-size: 13px;
+}
+.a-first .content h2
+{
+  padding: 5px 30px;
+  text-align: center;
+  position: relative;
+  top: -25px;
+}
+.a-first .card::after
+{
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: lightblue;
+  width: 100%;
+}
+.a-first .col-sm-12
+{
+    position: relative;
+    top: 40px;
+}
+
+.loops
+
+{
+    margin-top: 0px;
+}
+.loops img
+
+{
+   width: 100%;
+   height: 700px;
+   border-radius: 10px;
+}
+.b-second
+{
+    margin-top: 40px;
+}
+.b-second .dp img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.b-second .content p
+{
+    color: black;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 12px;
+}
+.b-second .content h2
+{
+    color: black;
+   
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+top: -25px;
+}
+.c-f .moana img
+{
+    width: 100%;
+    height: 500px;
+}
+.c-f .col-sm-8 
+{
+  
+  margin: 20px 3px;
+   
+ 
+}
+.c-f .col-sm-4 .title h6
+{
+  
+    font-size: 1.5rem;
+    text-transform: uppercase;
+     padding-top: 30px;
+   
+ 
+}
+.c-f .content button
+{
+    left: 30px;
+    position: relative;
+    width: 250px;
+}
+.c-f .content .btn-success
+{
+    color: black;
+    background: #dcf9f1;
+    border: 1px solid #dcf9f1;
+}
+.c-f .content .btn-success:hover
+{
+    color: white;
+    background: #4cd8b0;
+    border: 1px solid #4cd8b0;
+}
+.c-f .col-sm-4 .content p
+{
+  
+    font-size: 1rem ;
+    padding: 0px 10px;
+   
+ 
+}
+.c-f .col-sm-4
+{
+   
+   
+ background-color: #ccc;  
+ max-width: 22.1875rem; 
+ height: 350px;
+ border-radius: 10px;
+ border-right: 5px solid lightblue;
+}
+/* End About section */
+/* start services section */
+.services-section
+{
+    background: url(/services-images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.services-section .title 
+
+{
+    margin-top: 280px;
+}
+
+.services-section .title h1
+
+{
+   text-transform: uppercase;
+   color: white;
+   font-size: 50px;
+   letter-spacing: 3px;
+}
+.fs .col-sm-4
+
+{
+    margin-top: 10px;
+}
+.fs .title h6
+{
+ color: black;
+ font-weight: bold;
+
+}
+.fs .title p
+{
+    font-size: 12px;
+    padding-right: 70px;
+}
+.fs .icons
+{
+    position: relative;
+    top: 50px;
+    right: 70px; 
+
+}
+
+.fs .fa
+{
+    background-color: skyblue;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+.fs .fa:hover
+{
+    
+    background: red;
+    transition: .7s ease-in-out;
+    
+}
+.fs i:hover
+{
+    
+    color: white;
+    
+}
+
+.fs i
+{
+    font-size: 30px;
+    color: white;
+}
+
+/* End services section*/
+/* Start Contact section */
+.contact-section
+{
+    background: url(/contact-images/Anika-Noni-Rose-in-The-Princess-and-the-Frog-2009.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px; 
+}
+.contact-section .title h1
+{
+ text-align: center;
+ color: white;
+ text-transform: capitalize;
+ font-weight: 700 !important;
+
+}
+.contact-section .title 
+{
+ margin-top: 300px;
+ 
+}
+.kontact .otitle h2
+{
+    color: black;
+    font-size: 1.875rem;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.kontact .col-sm-6 
+{
+    margin-top: 60px;
+}
+.kontact .sub h4
+{
+   color: black;
+   font-size: 1.5em;
+   padding-bottom: 10px;
+}
+.kontact .sub h4
+{
+   color: black;
+   font-size: 1.5em;
+   padding-bottom: 10px;
+}
+.kontact p.momo
+{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+.kontact p.day
+{
+    color: black;
+    position: relative;
+    top: -10px;
+}
+.kontact p.day a:hover 
+{
+   text-decoration: none;
+   color: black;
+}
+.kontact .maig 
+
+{
+margin-bottom: 10px;
+}
+.kontact .maig h4
+
+{
+ color: black;
+ font-size: 20px;
+}
+.contact-form .group-form
+{
+    padding: 10px 0px;
+}
+.contact-form .form-control
+{
+   height: 60px;
+}
+
+.contact-form label
+{
+    color: black;
+}
+.contact-form textarea
+{
+    width: 540px;
+height: 80px;
+}
+/* End Contact section */
+@media(max-width:812px){
+    .home-1 .para p
+{
+   color: white;
+   font-size: 15px;
+   padding-top: 10px;
+   font-family: 'Lato', sans-serif;
+}
+.home-1 h1
+{
+   color: white;
+   font-size: 30px;
+   padding: 10px 0px;
+   border-bottom: 5px solid red;
+   font-family: 'Roboto', sans-serif;
+
+}
+.card-title .btn-primary
+{
+   margin-top: 30px; 
+   width: 150px;
+   background-color: red;
+   border: 1px solid red;
+   color: white;
+   border-radius: 4px;
+}
+/* home section Goofy Movie section */
+.pic-o i
+{
+  
+    position: relative;
+    top: 200px;
+    left: 200px;
+}
+.tomates img
+{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.tomates span
+{
+    float: none;
+    position: relative;
+    top: 30px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+.tomates span:hover
+{
+  color: #4682B4;
+}
+.tomates  a:hover
+{
+   text-decoration: none;
+
+}
+.tomates strong, .tomates p
+{
+    float: none;
+    position: relative;
+     top: 60px;
+     left: -50px;
+
+
+}
+.para-2 p {
+    padding: 0px 30px;
+    font-size: 15px;
+}
+.popcorn 
+{
+    margin-top: 50px;
+    padding-left: 10px;
+}
+/* home section Goofy Movie section */
+
+/*  Start  home footer section */
+.brands::after
+
+{
+  content: '';
+  display: block;
+  height: 2px;
+  background: lightgrey;
+margin-left: 1px;
+ width: 100%;
+  margin-bottom: 10px;
+}
+.small-text::before
+{
+   content: '';
+   display: block;
+   background: lightgrey;
+   height: 2px;
+   margin-left: 1px;
+   width: 100%;
+  
+}
+/*  End home footer section */
+.c-f .col-sm-4
+{
+   
+  margin: 20px 30px; 
+
+}
+.c-f .moana img
+{
+    width: 100%;
+    height: 300px;
+}
+.c-f .content button
+{
+    left: 30px;
+    position: relative;
+    width: 200px !important;
+}
+
+.fs .icons
+{
+ 
+position: relative;
+
+top: -30px;
+left: 30px;
+
+
+}
+.fs .col-sm-4
+{
+  margin-bottom: 40px;
+}
+.fs .title p
+{
+    font-size: 15px;
+    padding-right: 10px;
+}
+.contact-form textarea
+{
+    width: 428px;
+height: 80px;
+}
+}
+
+
+@media(max-width:990px){
+    .ttbtn .btn
+{ 
+    margin-top: 10px;
+    
+}
+.btn
+{ 
+  width: 150px;
+}
+.house-2  .col-sm-4:nth-child(1),
+.house-2  .col-sm-4:nth-child(2)
+{
+    margin-bottom: 30px ;
+}
+.media-footez
+{
+    display: block;
+}
+/* start full-footer */
+.full-screen 
+{
+    display: none;
+}
+/* End full-footer */
+.mem .content li
+{
+    display: inline-block;
+     position: relative;
+     right: -100px;
+}
+.social-icon li
+{
+ display: inline-block;
+ position: relative;
+ right: -120px;
+}
+
+}
+
+@media(max-width:1280px){
+    .c-f .content button
+{
+    left: 30px;
+    position: relative;
+    width: 150px !important;
+}
+.c-f .col-sm-4 .content p
+{
+  
+    font-size: 12px ;
+    padding: 0px 10px;
+   
+ 
+}
+}
